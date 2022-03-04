@@ -62,7 +62,7 @@ namespace DataAccess.Data
 
                 return true;
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return false;
                 //throw e.GetBaseException();
@@ -78,9 +78,10 @@ namespace DataAccess.Data
 
                 return true;
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e.GetBaseException();
+                return false;
+                //throw e.GetBaseException();
             }
         }
     }
